@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Open+Sans:400,700|Roboto:400,700');
+/* 
+color
+ #1194FF blue  Main
+ #ff594f orengered   Accent 
+ #444 grey Base
+*/
+
+$primary-color: #444;
+$secondry-color: #1194FF;
+$show-home-image: true;
+$home-image: url(/images/backImg.png);
+$background-opacity: 0.6;
+
+@mixin easeOut {
+ transition: all 0.4s ease-out;
+}
+
+@mixin background {
+    @if $show-home-image {
+        &#bg-img {
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover;
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: rgba($primary-color, $background-opacity);
+            }
+        }
+    }
+}
