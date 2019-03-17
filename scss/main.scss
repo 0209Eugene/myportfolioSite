@@ -77,7 +77,7 @@ main {
         }
     }
 }
-
+// About me 
 .about-info {
     display: grid;
     grid-gap: 30px;
@@ -119,6 +119,48 @@ main {
   }
 }
 
+// Work/Projects
+.projects {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+        width: 100%;
+        border-bottom: 3px #fff solid;
+
+        &:hover {
+            opacity: 0.7;
+            border-color: $secondry-color;
+            @include easeOut;
+        }
+    }
+}
+
+// Button Styles
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    &:hover {
+        background: $secondry-color;
+        color: set-text-color($secondry-color);
+    }
+}
+
+.btn-light {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: #444;
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($primary-color,50);
+}
+
+// Footer
 #main-footer {
     text-align: center;
     padding: 1rem;
