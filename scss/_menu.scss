@@ -91,7 +91,7 @@
                 background: url('/images/myPics.jpg');
                 background-size: cover;
                 border-radius: 50%;
-                border: 3px solid $secondry-color;
+                border: 3px solid $secondary-color;
             }
         }
     // not working nav-item transition
@@ -105,7 +105,7 @@
             }
 
             &.current > a {
-                color: $secondry-color;
+                color: $third-color;
             }
         }
     }
@@ -122,7 +122,7 @@
         @include easeOut;
 
         &:hover {
-            color: $secondry-color;
+            color: $secondary-color;
         }
     }
 

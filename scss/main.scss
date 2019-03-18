@@ -32,7 +32,6 @@ h3 {
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba($primary-color, 0.3);
         border-radius: 15px;
     }
 }
@@ -49,7 +48,7 @@ header {
 }
 
 .text-secondary {
- color: $secondry-color;
+ color: $secondary-color;
 }
 
 main {
@@ -64,7 +63,7 @@ main {
             padding: 0.4rem;
             
             &:hover {
-                color: $secondry-color;
+                color: $secondary-color;
                 @include easeOut();
             }
         }
@@ -93,7 +92,7 @@ main {
     height: 250px;
     margin: auto;
     border-radius: 50%;
-    border: 3px solid $secondry-color;
+    border: 3px solid $secondary-color;
 }
 
 .bio {
@@ -115,14 +114,14 @@ main {
 .job {
     background: lighten($primary-color,6);
     padding: 0.5rem;
-    border-bottom: 5px solid $secondry-color;
+    border-bottom: 5px solid $secondary-color;
   }
 }
 
 // Work/Projects
 .projects {
     display: grid;
-    grid-gap: 0.7rem;
+    grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
 
     img {
@@ -131,11 +130,38 @@ main {
 
         &:hover {
             opacity: 0.7;
-            border-color: $secondry-color;
+            border-color: $secondary-color;
             @include easeOut;
         }
     }
 }
+
+// Contact page
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+div {
+    font-size: 2rem;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    padding: 1.5rem 2.5rem;
+   @include easeOut;
+
+   &:hover {
+       padding: 0.5rem 1.5rem;
+       background: $third-color;
+       color: set-text-color($secondary-color);
+    span {
+        color: set-text-color($secondary-color);
+    }
+   }
+ }
+}
+
 
 // Button Styles
 .btn {
@@ -144,8 +170,8 @@ main {
     border: 0;
     margin-bottom: 0.3rem;
     &:hover {
-        background: $secondry-color;
-        color: set-text-color($secondry-color);
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
     }
 }
 
