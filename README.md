@@ -1,10 +1,10 @@
 # myportfolio_project
-This is the myportfolio site(ver2.0)
+##This is the myportfolio site(ver2.0)
 
-introduce myself
-show my works
+*introduce myself
+*show my works
 
-What skills I used 
+##What skills I used 
 
-HTML5, CSS3, JavaScript
-Scss
+*HTML5, CSS3, JavaScript
+*Scss
