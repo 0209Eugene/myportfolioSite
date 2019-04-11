@@ -4,6 +4,7 @@
   "description": "Responsive portfolio website",
   "main": "index.js",
   "dependencies": {
+    "firebase-tools": "^6.6.0",
     "gh-pages": "^2.0.1",
     "i": "^0.3.6",
     "node-sass": "^4.11.0"
