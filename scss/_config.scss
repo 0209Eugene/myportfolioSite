@@ -8,8 +8,8 @@ color
 */
 
 $primary-color: #444;
-$secondary-color: #1194FF;
-$third-color: #ff594f;
+$secondary-color: #ff594f;
+$third-color: #1194FF;
 $show-home-image: true;
 $home-image: url(/images/backImg.png);
 $background-opacity: 0.6;
@@ -20,7 +20,7 @@ $background-opacity: 0.6;
 
 @mixin background {
     @if $show-home-image {
-        &#bg-img {
+        &.bg-img {
             background: $home-image;
             background-attachment: fixed;
             background-size: cover;
